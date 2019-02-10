@@ -1,0 +1,16 @@
+Click to login. This will open a new window.
+<div>
+  <button (click)='authorize()' title='Authorize'>Authorize</button>
+</div>
+<div>
+  <button (click)='getMessages()' title='Messages'>Get Messages</button>
+</div>
+<div>
+  <button (click)='getProfile()' title='me'>Get Me</button>
+</div>
+<div>
+  <button (click)='getTracks()' title='tracks'>Get Tracks</button>
+</div>
+<div *ngIf="profile">
+  Profile: {{profile.displayName}} {{profile.href}}
+</div>
